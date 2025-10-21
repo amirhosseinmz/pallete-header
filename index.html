@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چت انیمیشنی هوش مصنوعی</title>
+    <style>
+        @font-face {
+            font-family: 'IranYekan';
+            font-style: normal ;
+            font-weight: normal;
+            src: url("./src/fonts/Qs_Iranyekan.ttf");
+        }
+    </style>
+    <link rel="stylesheet" href="./src/palleteChatAnimate.css">
+    <script src="./src/palleteChatAnimate.js"></script>
+</head>
+<body>
+
+
+        <div class="palleteChatAnimate" id="chatMessages">
+            <!-- پیام‌ها در اینجا نمایش داده می‌شوند -->
+        </div>
+
+
+    <script>
+
+        
+        document.addEventListener('DOMContentLoaded', () => {        
+            var newChat = new palleteChatAnimate('./json/chat_repository.json','chatMessages');
+            newChat.isReady(()=>{
+                newChat.startChat();
+            })    
+        });
+
+
+
+    </script>
+</body>
+</html>
