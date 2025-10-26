@@ -33,7 +33,7 @@ var palleteChatAnimate = function(url_repository,id){
     };
     this.fetchData = (callback)=>{
         if(this.repositoryData){
-            this.urlChat = this.repositoryData[parseInt(Math.random()*(this.repositoryData.length+1))];
+            this.urlChat = this.repositoryData[parseInt(Math.random()*(this.repositoryData.length))];
             if(this.cache[this.urlChat]){
                 this.chatData = this.cache[this.urlChat];
                 callback(); 
