@@ -80,7 +80,14 @@ var palleteChatAnimate = function(url_repository,id){
         messageDiv.className = `message`;
         const contentDiv = document.createElement('div');
         contentDiv.className = 'message-content';
-        contentDiv.textContent = content;     
+        if(content.includes('$IMG:')){
+            content.split("$IMG:").forEach((e,i)=>{
+                var img = document.createElement('img');
+                img.src = e;
+                img.style.height = '100px';
+                contentDiv.appendChild(img);
+            })
+        }else contentDiv.textContent = content;    
         const timeDiv = document.createElement('div');
         timeDiv.className = 'message-time';
         timeDiv.textContent = `${this.getCurrentTime()} - ${this.chatData[sender].fullname}`;   

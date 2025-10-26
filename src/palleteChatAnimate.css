@@ -81,7 +81,7 @@
     align-self: flex-end;
 }
 
-.palleteChatAnimate .bot1 .message,.palleteChatAnimate .typing-indicator-bot.bot1{
+/* .palleteChatAnimate .bot1 .message,.palleteChatAnimate .typing-indicator-bot.bot1{
     background: linear-gradient(135deg, #348699, #ff53af, #348699);
 }
 .palleteChatAnimate .user1 .message,.palleteChatAnimate .typing-indicator-user.user1{
@@ -95,6 +95,23 @@
 }
 .palleteChatAnimate .user4 .message,.palleteChatAnimate .typing-indicator-user.user4{
     background: linear-gradient(135deg, #793af7, #7889D7, #793af7);
+} */
+
+
+.palleteChatAnimate .bot1 .message,.palleteChatAnimate .typing-indicator-bot.bot1{
+    background: linear-gradient(135deg, #8C00FF, #450693, #8C00FF);
+}
+.palleteChatAnimate .user1 .message,.palleteChatAnimate .typing-indicator-user.user1{
+    background: linear-gradient(135deg, #FFC400, #FF3F7F, #FFC400);
+}
+.palleteChatAnimate .user2 .message,.palleteChatAnimate .typing-indicator-user.user2{
+    background: linear-gradient(135deg, #FFC400, #FF3F7F, #FFC400);
+}
+.palleteChatAnimate .user3 .message,.palleteChatAnimate .typing-indicator-user.user3{
+    background: linear-gradient(135deg, #FFC400, #FF3F7F, #FFC400);
+}
+.palleteChatAnimate .user4 .message,.palleteChatAnimate .typing-indicator-user.user4{
+    background: linear-gradient(135deg, #FFC400, #FF3F7F, #FFC400);
 }
 
 .palleteChatAnimate .typing-indicator-bot,
@@ -150,6 +167,12 @@
 
 .palleteChatAnimate .message-content {
     line-height: 1.8;
+}
+
+.palleteChatAnimate .message-content img {
+    border-radius: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
 }
 
 .palleteChatAnimate .message-time {
