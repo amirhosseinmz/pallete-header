@@ -4,6 +4,7 @@
         ".\\json\\chat1.json",
         ".\\json\\chat2.json",
         ".\\json\\chat3.json",
-        ".\\json\\chat4.json",
+        ".\\json\\chat4.json"
     ]
+
 }
