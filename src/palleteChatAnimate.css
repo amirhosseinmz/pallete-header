@@ -99,19 +99,19 @@
 
 
 .palleteChatAnimate .bot1 .message,.palleteChatAnimate .typing-indicator-bot.bot1{
-    background: linear-gradient(135deg, #8C00FF, #450693, #8C00FF);
+    background: linear-gradient(135deg, #B02463, #B02463, #B02463);
 }
 .palleteChatAnimate .user1 .message,.palleteChatAnimate .typing-indicator-user.user1{
-    background: linear-gradient(135deg, #FFC400, #FF3F7F, #FFC400);
+    background: linear-gradient(135deg, #F1CE36, #F1CE36, #F1CE36);
 }
 .palleteChatAnimate .user2 .message,.palleteChatAnimate .typing-indicator-user.user2{
-    background: linear-gradient(135deg, #FFC400, #FF3F7F, #FFC400);
+    background: linear-gradient(135deg, #F1CE36, #F1CE36, #F1CE36);
 }
 .palleteChatAnimate .user3 .message,.palleteChatAnimate .typing-indicator-user.user3{
-    background: linear-gradient(135deg, #FFC400, #FF3F7F, #FFC400);
+    background: linear-gradient(135deg, #F1CE36, #F1CE36, #F1CE36);
 }
 .palleteChatAnimate .user4 .message,.palleteChatAnimate .typing-indicator-user.user4{
-    background: linear-gradient(135deg, #FFC400, #FF3F7F, #FFC400);
+    background: linear-gradient(135deg, #F1CE36, #F1CE36, #F1CE36);
 }
 
 .palleteChatAnimate .typing-indicator-bot,
