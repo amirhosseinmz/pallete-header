@@ -213,7 +213,7 @@
     from {
         opacity: 1; 
         height: var(--start-height);
-        margin-bottom: 35px;
+        margin-bottom: 45px;
         filter: blur(0)
         /* transform: translateY(0); */
     }
@@ -254,4 +254,5 @@
     }
 
 }
+
 
