@@ -1,2 +1,5 @@
-# pallete-header
-header chat pallete
+# هدر پلت
+
+# راه اندازی:
+
+
