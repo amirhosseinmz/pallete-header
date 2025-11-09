@@ -87,7 +87,7 @@ var palleteChatAnimate = function(url_repository,id){
                 img.style.height = '100px';
                 contentDiv.appendChild(img);
             })
-        }else contentDiv.textContent = content;    
+        }else contentDiv.innerHTML = content;    
         const timeDiv = document.createElement('div');
         timeDiv.className = 'message-time';
         timeDiv.textContent = `${this.getCurrentTime()} - ${this.chatData[sender].fullname}`;   
@@ -196,4 +196,5 @@ var palleteChatAnimate = function(url_repository,id){
     };
 
     this.__constructor();
+
 }
