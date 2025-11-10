@@ -1,5 +1,6 @@
 {
     "version":0,
+    "inOrder":true,
     "url":[
         ".\\json\\chat1.json",
         ".\\json\\chat2.json",
@@ -8,3 +9,4 @@
     ]
 
 }
+
