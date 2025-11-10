@@ -11,6 +11,8 @@ var palleteChatAnimate = function(url_repository,id){
     this.chatData = [];
     this.cache = {};
     this.maxMsgShow = 3;
+    this.chatId = -1;
+    this.repositoryRandom = true;
     this.isReadyCallback = ()=>{};
     this.__constructor = ()=>{
         this.resetChat();    
@@ -33,7 +35,9 @@ var palleteChatAnimate = function(url_repository,id){
     };
     this.fetchData = (callback)=>{
         if(this.repositoryData){
-            this.urlChat = this.repositoryData[parseInt(Math.random()*(this.repositoryData.length))];
+            if(this.repositoryRandom)this.chatId = parseInt(Math.random()*(this.repositoryData.length));
+            else this.chatId = this.chatId+1 >= this.repositoryData.length ? 0 : this.chatId + 1;
+            this.urlChat = this.repositoryData[this.chatId];
             if(this.cache[this.urlChat]){
                 this.chatData = this.cache[this.urlChat];
                 callback(); 
@@ -52,6 +56,7 @@ var palleteChatAnimate = function(url_repository,id){
             if(err){console.error(err);return;}
             this.repositoryData = data.url;
             this.repositoryVersion = data.version;
+            this.repositoryRandom = data.random ? true : false;
             this.fetchCacheOnLocal();
             this.fetchData(callback);
         });
@@ -198,4 +203,5 @@ var palleteChatAnimate = function(url_repository,id){
     this.__constructor();
 
 }
+
 
