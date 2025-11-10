@@ -65,6 +65,7 @@
 ```json
 {
     "version":0,
+    "inOrder":true,
     "url":[
         ".\\json\\sample_chat.json",  
         ".\\json\\chat1.json",
