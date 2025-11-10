@@ -56,7 +56,7 @@ var palleteChatAnimate = function(url_repository,id){
             if(err){console.error(err);return;}
             this.repositoryData = data.url;
             this.repositoryVersion = data.version;
-            this.repositoryRandom = data.random ? true : false;
+            this.repositoryRandom = data.inOrder ? false : true;
             this.fetchCacheOnLocal();
             this.fetchData(callback);
         });
@@ -203,5 +203,6 @@ var palleteChatAnimate = function(url_repository,id){
     this.__constructor();
 
 }
+
 
 
