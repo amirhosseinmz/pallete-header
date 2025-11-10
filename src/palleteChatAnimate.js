@@ -155,7 +155,7 @@ var palleteChatAnimate = function(url_repository,id){
             this.chatMessages.scrollTop = this.chatMessages.scrollHeight;
             
             this.currentMessageIndex++;
-            this.chatInterval = setTimeout(this.showNextMessage.bind(this), 1000);
+            this.chatInterval = setTimeout(this.showNextMessage.bind(this),message.nextDelay || 1000);
         }, delay || message.delay || 4000);
     };
     // Chat start function
@@ -198,3 +198,4 @@ var palleteChatAnimate = function(url_repository,id){
     this.__constructor();
 
 }
+
